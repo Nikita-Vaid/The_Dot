@@ -96,7 +96,6 @@ const Admission = () => {
                   <input type="checkbox" name="updatesAuthorized" /> I authorize
                   The DOT Institute to send me regular updates via Phone Calls,
                   WhatsApp, SMS, or Email.
-                  i want to add text
                 </label>
               </div>
               <button type="submit" disabled={isSubmitting}>
