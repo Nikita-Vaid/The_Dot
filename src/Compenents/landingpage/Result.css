@@ -1,0 +1,74 @@
+.achievers-container {
+    text-align: center;
+    background: #1e3a5f;
+    color: white;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .schools {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .achievers-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .achiever-card {
+    background: #ffc107;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .achiever-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 10px;
+  }
+  
+  .iit-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1e3a5f;
+  }
+  
+  .jee-rank {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1e3a5f;
+  }
+  
+  .achiever-info {
+    background: #003366;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .achiever-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .parent, .address {
+    font-size: 0.9rem;
+  }
+  
