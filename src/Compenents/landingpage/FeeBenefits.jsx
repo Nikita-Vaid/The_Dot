@@ -24,7 +24,7 @@ const FeeBenefits = () => {
           <p className="benefit-description">
             This is or result page
           </p>
-          <p className="benefit-deadline">Result showcase</p>
+          <p className="benefit-deadline">Result showcase</p>   
           <Link to="/result"><button className="Result-button">APPLY NOW</button></Link>
         </div>
         <div className="benefit-card">
