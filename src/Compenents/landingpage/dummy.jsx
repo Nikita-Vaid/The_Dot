@@ -1,4 +1,3 @@
-
 import  { useState,useEffect } from "react";
 import ReactPixel from "react-facebook-pixel";
 import "../../../styles/Admission.css";

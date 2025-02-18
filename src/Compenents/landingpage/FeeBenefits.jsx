@@ -1,5 +1,6 @@
 import React from "react";
 import "../../../styles/FeeBenefits.css";
+import { Link } from "react-router-dom";
 
 const FeeBenefits = () => {
   
@@ -19,12 +20,12 @@ const FeeBenefits = () => {
           <button className="apply-button" onClick={handleEnrolNowClick}>APPLY NOW</button>
         </div>
         <div className="benefit-card">
-          <h2 className="benefit-title">Double fee advantage</h2>
+          <h2 className="benefit-title">Result page</h2>
           <p className="benefit-description">
-            Get double advantage of special fee benefit and 
+            This is or result page
           </p>
-          <p className="benefit-deadline">DSAT scholarship</p>
-          <button className="apply-button" onClick={handleEnrolNowClick}>APPLY NOW</button>
+          <p className="benefit-deadline">Result showcase</p>
+          <Link to="/result"><button className="Result-button">APPLY NOW</button></Link>
         </div>
         <div className="benefit-card">
           <h2 className="benefit-title">DOT scholarship admission test</h2>
