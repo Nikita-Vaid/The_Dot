@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../styles/TriumphSection.css";
-import truphImage from "../../assets/trumph.png";
+import truphImage from "../../assets/ASD.jpg";
 
 const TriumphSection = () => {
   const title = "THE TRIUMPH OF 5 YEARS";
