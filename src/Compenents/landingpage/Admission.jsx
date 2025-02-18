@@ -1,6 +1,5 @@
 
 import  { useState,useEffect } from "react";
-import ReactPixel from "react-facebook-pixel";
 import "../../../styles/Admission.css";
 import FeeBenefits from "./FeeBenefits";
 import Questions from "./Questions";
@@ -9,7 +8,9 @@ import StatsSection from "./StatsSection";
 import TriumphSection from "./TriumphSection";
 import CoursesSection from "./CoursesSectionL";
 import GreenBoard from "../../assets/greenBoard.jpg";
-// import DotGuide from "./Dotguidlines";
+
+// Import Meta Pixel library
+import ReactPixel from 'react-facebook-pixel';
 
 const Admission = () => {
   const [isSubmitting, setIsSubmitting] = useState(false); // State for submission status
@@ -35,6 +36,7 @@ const Admission = () => {
       const response = await fetch(
         "https://script.google.com/macros/s/AKfycbzOu-FSuI1x5Q7RsECP_aiC3bxy7Bhm2_HRYk1fHO3sXgW7Z0_X6zK4UMonYacJco3U/exec",
         {
+          
           method: "POST",
           body: formData,
         }
@@ -55,6 +57,14 @@ const Admission = () => {
             });
       alert("Form submitted successfully!");
       formEle.reset(); // Reset the form fields
+
+      // Track form submission event using Meta Pixel
+      ReactPixel.track("Lead", {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        mobile: formData.get("mobile"),
+        choice: formData.get("choice"),
+      });
     } catch (error) {
       console.error(error);
       alert("There was an error submitting the form. Please try again.");
@@ -116,24 +126,23 @@ const Admission = () => {
         </div>
       </div>
       <div className="fee-benefits-section">
-         <FeeBenefits />
-       </div>
-       <div>
+        <FeeBenefits />
+      </div>
+      <div>
         <DotGuide />
-      </div>  
-      <div>
-        <StatsSection/>
       </div>
       <div>
-        <TriumphSection/>
+        <StatsSection />
       </div>
       <div>
-        <CoursesSection/>
+        <TriumphSection />
       </div>
-      <div> 
+      <div>
+        <CoursesSection />
+      </div>
+      <div>
         <Questions />
       </div>
-      
     </div>
   );
 };
