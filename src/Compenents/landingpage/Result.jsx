@@ -1,6 +1,8 @@
 import React from "react";
 import "../landingpage/Result.css";
 import mukulpng from "../../assets/mukul.png";
+import garvpng from "../../assets/garv.png";
+import rachitpng from "../../assets/rachit.png";
 
 const achievers = [
   {
@@ -17,7 +19,7 @@ const achievers = [
     address: "Manchanda, Rewari",
     jeeRank: "CRL 2267",
     iit: "IIT Delhi",
-    img: "/images/garv.png", // Replace with actual image path
+    img: garvpng, // Replace with actual image path
   },
   {
     name: "Rachit Mudgil",
@@ -25,16 +27,42 @@ const achievers = [
     address: "Jatauli, Haily Mandi, Gurugram",
     jeeRank: "743*",
     iit: "IIT Patna",
-    img: "/images/rachit.png", // Replace with actual image path
+    img: rachitpng, // Replace with actual image path
   },
   {
-    name: "Rachit Mudgil",
-    parent: "Praveen Kumar",
-    address: "Jatauli, Haily Mandi, Gurugram",
-    jeeRank: "743*",
-    iit: "IIT Patna",
-    img: "/images/rachit.png", // Replace with actual image path
+    name: "Chetna Sharma",
+    parent: "Jitender Sharma",
+    address: "Mahaveer Nagar, Rewari",
+    jeeRank: "2313*",
+    iit: "IIT Delhi",
+    img: rachitpng, // Replace with actual image path
   },
+  {
+    name: "Nancy Yadav",
+    parent: "Rambir Yadav",
+    address: "Berli Kalan, Rewari",
+    jeeRank: "5297",
+    iit: "IIT Roorkee",
+    img: rachitpng, // Replace with actual image path
+  },
+  {
+    name: "Kashish Kapadia",
+    parent: "Pawan Kumar",
+    address: "Rohtas, Bihar",
+    jeeRank: "5376",
+    iit: "IIT Delhi",
+    img: rachitpng, // Replace with actual image path
+  },
+  {
+    name: "Kashish Kapadia",
+    parent: "Pawan Kumar",
+    address: "Rohtas, Bihar",
+    jeeRank: "5376",
+    iit: "IIT Delhi",
+    img: rachitpng, // Replace with actual image path
+  },
+  
+  
 ];
 
 const Achievers = () => {
