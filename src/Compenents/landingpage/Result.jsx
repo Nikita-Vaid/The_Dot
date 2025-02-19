@@ -20,6 +20,28 @@ import vivekjpg from "../../assets/vivek.jpg";
 import nextEjpg from "../../assets/nextE.jpg";
 import vikasjpg from "../../assets/vikas.jpg";
 import rahuljpg from "../../assets/Rahul.jpg";
+import aaryajpg from "../../assets/aarya.jpg";
+import nikhiljpg from "../../assets/nikhil.jpg";
+import badaljpg from "../../assets/badal.jpg";
+import payaljpg from "../../assets/payal.jpg";
+import harshyadavjpg from "../../assets/harshyadav.jpg";
+import nitinjpg from "../../assets/nitin.jpg";
+import preetijpg from "../../assets/preeti.jpg";
+import mahirjpg from "../../assets/mahir.jpg";
+import anishjpg from "../../assets/anish.jpg";
+import rahulkumarjpg from "../../assets/rahulkumar.jpg";
+import aakashjpg from "../../assets/aakash.jpg";
+import rajujpg from "../../assets/raju.jpg";
+import deepanshujpg from "../../assets/deepanshu.jpg";
+import riyajpg from "../../assets/riya.jpg";
+import bhumikajpg from "../../assets/bhumika.jpg";
+import harshitjpg from "../../assets/harshit.jpg";
+import arunimajpg from "../../assets/arunima.jpg";
+import vikashjpg from "../../assets/vikash.jpg";
+import lalitjpg from "../../assets/lalit.jpg";
+import rishijpg from "../../assets/rishi.jpg";
+import divayjpg from "../../assets/divay.jpg";
+import kunaljpg from "../../assets/kunal.jpg";
 
 const achievers = [
   {
@@ -159,9 +181,9 @@ const achievers = [
     img: vivekjpg, // Replace with actual image path
   },
   {
-    name: "...",
+    name: "Next can be You!",
     jeeRank: "...",
-    iit: "Next can be You!",
+    iit: "Your Future IIT!",
     img: nextEjpg, // Replace with actual image path
   }
 
@@ -170,8 +192,43 @@ const achievers = [
 const medicalAchievers = [
   { name: "Vikas", parent: "Khetaram", address: "Nangal Katha Narnaul", neetScore: "685/720", college: "UCMS Delhi", img: vikasjpg },
   { name: "Rahul Kumar", parent: "Sanjay Kumar", address: "Sukarpura,Rewari", neetScore: "603/720", college: "Govt. Ayurved College, Nagpur", img: rahuljpg },
-  { name: "", parent: "", address: "",  college: "Next can be You!", img: nextEjpg },
+  { name: "Next can be You!", parent: "", address: "",  college: "Your Future College!", img: nextEjpg },
 ];
+
+// New Achievers List for NITs, IIITs, and Others
+const otherAchievers = [
+  { name: "Aarya Singh", parent: "Abhay Ranjan", address: "Sec-04, Rewari", school: "DPS, Rewari", college: "NIT Trichy", img: aaryajpg },
+  { name: "Nikhil Sharma", parent: "Jitender Sharma", address: "Mahaveer Nagar, Rewari", school: "Holy Child Public School, Rewari", college: "NIT Jaipur", img: nikhiljpg },
+  { name: "Badal Yadav", parent: "Jai Bhagwan", address: "Sec-26, Rewari", school: "Raj International School, Rewari", college: "DTU Delhi", img: badaljpg },
+  { name: "Payal Yadav", parent: "Jai Bhagwan", address: "Sec-26, Rewari", school: "Raj International School, Rewari", college: "NSUT Delhi", img: payaljpg },
+  { name: "Harsh Yadav", parent: "Jitender Yadav", address: "Pahari, Gurugram", school: "West Academy, Pataudi", college: "NIT Kurukshetra", img: harshyadavjpg },
+  { name: "Nitin Kumar", parent: "Nand Lal", address: "Qutubpur, Rewari", school: "SBS Jovial Child School, Rewari", college: "IIIT Vadodra", img: nitinjpg },
+  
+  { name: "Preeti Yadav", parent: "Sarjeet Singh", address: "Sec-04, Rewari", school: "RPS School, Rewari", college: "IIIT Allahabad", img: preetijpg },
+  { name: "Mahir Yadav", parent: "Naresh Yadav", address: "Sec-03, Rewari", school: "RPS School, Rewari", college: "IIIT Delhi", img: mahirjpg },
+  { name: "Anish Kumar", parent: "Alok Kumar", address: "Muzaffarpur, Bihar", school: "Bihar Student", college: "NIT Raipur", img: anishjpg },
+  { name: "Rahul Kumar", parent: "Vasistha Narayan", address: "Patna, Bihar", school: "Bihar Student", college: "IIEST, Shibpur", img: rahulkumarjpg },
+  { name: "Aakash Yadav", parent: "Ajit Pal", address: "Sec-18, Rewari", school: "RPS School, Kosli", college: "IIIT Trichy", img: aakashjpg },
+  { name: "Raju Kumar", parent: "Kishor Mahto", address: "Muzaffarpur, Bihar", school: "Bihar Student", college: "NIT Allahabad", img: rajujpg },
+
+
+  { name: "Deepanshu", parent: "Sanjay Singh", address: "Narhera, Pataudi, Gurugram", school: "GWS, Pataudi", college: "NIT Kurukshetra", img: deepanshujpg },
+  { name: "Riya Thakran", parent: "Suresh Kumar", address: "Khor, Pataudi, Gurugram", school: "BMB School, Dadawas", college: "NIT Kurukshetra", img: riyajpg },
+  { name: "Ravikant", parent: "Mukesh Kumar", address: "Kakoria, Rewari", school: "Yaduvanshi School, Rewari", college: "NIT Kurukshetra", img: ravikantjpg },
+  { name: "Bhumika Yadav", parent: "Deepak Yadav", address: "Gopaldev Chowk, Rewari", school: "SunGlow Int. School, Rewari", college: "YMCA Faridabad", img: bhumikajpg },
+  { name: "Harshit Kumar", parent: "Sanjeev Kumar", address: "Company Bag, Rewari", school: "Yaduvanshi School, Rewari", college: "YMCA Faridabad", img: harshitjpg },
+  { name: "Arunima", parent: "Dinesh Yadav", address: "Sec-04, Rewari", school: "Rishi Public School, Rewari", college: "MSIT Delhi", img: arunimajpg },
+  { name: "Vikash Kaushik", parent: "Manjeet Kaushik", address: "Vikash Nagar, Rewari", school: "Suraj School, Rewari", college: "YMCA Faridabad", img: vikashjpg },
+  { name: "Lalit Kaushik", parent: "Manjeet Kaushik", address: "Vikash Nagar, Rewari", school: "Suraj School, Rewari", college: "YMCA Faridabad", img: lalitjpg },
+  { name: "Rishi Jangir", parent: "Devender", address: "Vijay Nagar, Rewari", school: "KVS, Rewari", college: "DCRUST Murthal", img: rishijpg },
+  { name: "Divay Yadav", parent: "Pardeep Kumar", address: "Suncity, Rewari", school: "DPS, Rewari", college: "LNMIT Jaipur", img: divayjpg },
+  { name: "Kunal Yadav", parent: "Hemant Kumar", address: "Sec-04, Rewari", school: "RPS, Rewari", college: "DCRUST Murthal", img: kunaljpg },
+
+
+  { name: "Next can be You!", parent: "", address: "", school: "", college: "Your Future NIT/IIIT!", img: nextEjpg },
+];
+
+
 
 const Achievers = () => {
   return (
@@ -201,6 +258,21 @@ const Achievers = () => {
             <img src={achiever.img} alt={achiever.name} className="achiever-img" />
             <h3 className="iit-name">{achiever.college}</h3>
             <p className="jee-rank">NEET Score: {achiever.neetScore}</p>
+            <div className="achiever-info">
+              <p className="achiever-name">{achiever.name}</p>
+              <p className="parent">S/o {achiever.parent}</p>
+              <p className="address">Add: {achiever.address}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <h1 className="title">Our Achievements in NITs, IIITs, and Others</h1>
+      <div className="achievers-list">
+        {otherAchievers.map((achiever, index) => (
+          <div className="achiever-card" key={index}>
+            <img src={achiever.img} alt={achiever.name} className="achiever-img" />
+            <h3 className="iit-name">{achiever.college}</h3>
+            <p className="jee-rank">JEE Rank: {achiever.jeeRank}</p>
             <div className="achiever-info">
               <p className="achiever-name">{achiever.name}</p>
               <p className="parent">S/o {achiever.parent}</p>
