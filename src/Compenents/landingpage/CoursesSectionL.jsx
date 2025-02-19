@@ -1,59 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../../styles/CoursesSectionL.css";
 
 const CoursesSection = () => {
-  const handleEnrolNowClick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const courses = [
+    "https://www.youtube.com/embed/Ab40mFOH0no?si=bIEejFWEU7fjoXFo",
+    "https://www.youtube.com/embed/AUZd7aGnPK0?si=eTWe8u3nzAMYEkvE",
+    "https://www.youtube.com/embed/E5_0W-bx1YE",
+    "https://www.youtube.com/embed/xeruM608dBM",
+    "https://www.youtube.com/embed/egC7Upkgrwg",
+    "https://www.youtube.com/embed/1-J288mq9oo?si=3pRN32usLsn5RCqH",
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? courses.length - 1 : prevIndex - 1));
   };
 
-  const courses = [
-    {
-      icon: "📘",
-      title: "Crash Course | JEE Main 2025",
-      description:
-        "The Crash Course to Give Your JEE Main Preparation the Ultimate Boost The DOT Institute announces the much-awaited “Online Crash Course” for JEE Main 2025. Classes will start soon.",
-      button: "LEARN MORE",
-      path: "https://thedotinstitute.in/CrashCourse",
-    },
-    {
-      icon: "🎓",
-      title: "IIT-JEE (Main + Advanced)",
-      description:
-        "Build a strong foundation for success in IIT-JEE with our proven teaching methodology guided by experts known for delivering exceptional results.",
-      button: "LEARN MORE",
-      path: "https://support.thedotiit.in/",
-    },
-    {
-      icon: "🩺",
-      title: "NEET (UG)",
-      description:
-        "Embark on your pre-medical preparation with our specialized courses, recognized for their impressive track record in achieving remarkable results each year.",
-      button: "LEARN MORE",
-      path: "https://support.thedotiit.in/",
-    },
-  ];
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === courses.length - 1 ? 0 : prevIndex + 1));
+  };
 
   return (
     <div className="courses-sectionL">
-      <h1 className="courses-titleL">EXPLORE OUR ENHANCED COURSES</h1>
-      <h2 className="courses-subtitleL">Tailored for your Success</h2>
-      <div className="courses-container">
-        {courses.map((course, index) => (
-          <div key={index} className="course-card">
-            <div className="course-icon">{course.icon}</div>
-            <h3 className="course-title">{course.title}</h3>
-            <p className="course-description">{course.description}</p>
-            <a href={course.path} target="_blank" rel="noopener noreferrer">
-              <button className="course-button" onClick={handleEnrolNowClick}>
-                {course.button}
-              </button>
-            </a>
-          </div>
-        ))}
+      <h1 className="courses-titleL">EXPLORE OUR PODCAST</h1>
+      <div className="slider-container">
+        <button className="slider-button left" onClick={prevSlide}>&#10094;</button>
+        <div className="video-frame">
+          <iframe
+            width="100%"
+            height="400"
+            src={courses[currentIndex]}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <button className="slider-button right" onClick={nextSlide}>&#10095;</button>
       </div>
     </div>
   );
 };
 
 export default CoursesSection;
+
+
 

@@ -8,8 +8,8 @@ const FeeBenefits = () => {
   };
   return (
     <div className="fee-benefits-container">
-      <h1 className="title">
-        Discover our ongoing <br /> Demo Classes & scholarships
+      <h1 className="title-fee">
+        Discover our ongoing <br /> Demo Classes & Results
       </h1>
       <div className="benefits-grid">
         <div className="benefit-card">
@@ -18,8 +18,7 @@ const FeeBenefits = () => {
             Attend Our Demo Classes For IIT-JEE & NEET
           </p>
           <p className="benefit-deadline">
-            Free 15 Days Demo Class For 12th Class.Be at your Best with Best
-            Faculty In Rewari
+            Free 15 Days Demo Class For 12th Class.
           </p>
           <button className="apply-button" onClick={handleEnrolNowClick}>
             APPLY NOW
@@ -31,17 +30,16 @@ const FeeBenefits = () => {
             Explore the outstanding achievements of our students.
           </p>
           <p className="benefit-deadline">
-            Check out the list of selected students in IIT-JEE and celebrate
-            their hard work and dedication.
+            Celebrate their Hard work and dedication.
           </p>
           <Link to="/result">
             <button className="apply-button">VIEW RESULTS</button>
           </Link>
         </div>
         <div className="benefit-card">
-          <h2 className="benefit-title">DOT Scholarship Admission Test</h2>
+          <h2 className="benefit-title">DSAT</h2>
           <p className="benefit-description">
-            Take the DSAT and unlock the opportunity to receive a scholarship.
+            Take the DOT Scholarship Admission Test.
           </p>
           <p className="benefit-deadline">
             Get up to <strong>90% scholarship</strong> based on your
