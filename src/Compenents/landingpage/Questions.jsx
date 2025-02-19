@@ -3,24 +3,24 @@ import "../../../styles/Questions.css";
 
 const questions = [
   {
-    question: "What is the Special Fee Benefit?",
-    answer: "The Special Fee Benefit allows students to secure their admission at a reduced fee by depositing the required fee on or before the last date. This helps students lock in a lower fee slab, making The DOT programs more accessible."
+    question: "When will be Demo Classes Start?",
+    answer: "Demo Classes will be start From 18 FEB 2025."
   },
   {
-    question: "What is the Double Fee Advantage?",
-    answer: "The Double Fee Advantage combines the benefits of the Special Fee Benefit with a scholarship from TALLENTEX & ASAT, maximizing financial savings for students."
+    question: "What will you get in Crash Course?",
+    answer: "A Better Idea about which topics to focus on more ,A Clear-Cut Strategy ,Stronger Fundamentals ,Clearer Concepts ,Practised Syllabus"
   },
   {
-    question: "How does the Double Fee Advantage work?",
-    answer: "First, secure your admission under the Special Fee Benefit by depositing the fee before the last date. Then, add your TALLENTEX scorecard/ASAT score to qualify for an additional scholarship. This combination ensures a double advantage on your fees."
+    question: "what will be provide in Crash Course  ?",
+    answer: "✔ 180+ Hours (32 Hours in a Week) ✔ Fast-Paced Offline Classes (One to One Mentorship Session) ✔ 45+ Home Practice Tests ✔ 10 JEE Mains Full Mock Tests ✔ 11th & 12th Syllabus Fully Covered with Advanced Problem-Solving ✔ Get an 80% Scholarship on JEE Advanced Crash Course for students with 97+ percentile in JEE Mains! ✔ Hostel Facility Available"
   },
   {
-    question: "Who is eligible for these scholarship opportunities?",
-    answer: "All students applying for The DOT courses are eligible for the Special Fee Benefit if they deposit their fee by the last date. Students can also participate in TALLENTEX/ASAT to earn additional scholarships, subject to eligibility and performance."
+    question: "For whom is this Demo class?",
+    answer: "This Demo class is for IIT-JEE (Main + Advanced) , NEET (UG) aspirants and For 12th Students."
   },
   {
-    question: "Where can I find more information or apply for these scholarships?",
-    answer: "Visit the The DOT Institute’s official website or helpdesk."
+    question: "Where can I find more information ?",
+    answer: "Visit the The DOT Institute’s official website or helpdesk.This is the Link of your official website.(https://thedotinstitute.in/)"
   }
 ];
 
