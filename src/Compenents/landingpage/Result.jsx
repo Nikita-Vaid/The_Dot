@@ -213,7 +213,7 @@ const achievers = [
 
 const medicalAchievers = [
   { name: "Vikas", parent: "Khetaram", address: "Nangal Katha Narnaul", neetScore: "685/720", college: "UCMS Delhi", img: vikasjpg },
-  { name: "Rahul Kumar", parent: "Sanjay Kumar", address: "Sukarpura,Rewari", neetScore: "603/720", college: "Govt. Ayurved College, Nagpur", img: rahuljpg },
+  { name: "Rahul Kumar", parent: "Sanjay Kumar", address: "Sukarpura,Rewari", neetScore: "603/720", college: "GAC Nagpur", img: rahuljpg },
   { name: "Next can be You!", parent: "", address: "",  college: "Your Future College!", img: nextEjpg },
 ];
 
@@ -297,7 +297,7 @@ const Achievers = () => {
             <p className="jee-rank">NEET Score: {achiever.neetScore}</p>
             <div className="achiever-info">
               <p className="achiever-name">{achiever.name}</p>
-              <p className="parent">S/o {achiever.parent}</p>
+              <p className="parent">S/o: {achiever.parent}</p>
               <p className="address">Add: {achiever.address}</p>
             </div>
           </div>
