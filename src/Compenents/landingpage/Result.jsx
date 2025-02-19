@@ -3,6 +3,23 @@ import "../landingpage/Result.css";
 import mukulpng from "../../assets/mukul.png";
 import garvpng from "../../assets/garv.png";
 import rachitpng from "../../assets/rachit.png";
+import chetnajpg from "../../assets/chetna.jpg";
+import nancyjpg from "../../assets/nancy.jpg";
+import kashishjpg from "../../assets/kashish.jpg";
+import poojajpg from "../../assets/pooja.jpg";
+import harshjpg from "../../assets/harsh.jpg";
+import harshitajpg from "../../assets/harshita.jpg";
+import hiteshjpg from "../../assets/hitesh.jpg";
+import kuranjpg from "../../assets/kuran.jpg";
+import himajpg from "../../assets/hima.jpg";
+import druvjpg from "../../assets/druv.jpg";
+import tushantjpg from "../../assets/tushant.jpg";
+import ravikantjpg from "../../assets/ravikant.jpg";
+import ishajpg from "../../assets/isha.jpg";
+import vivekjpg from "../../assets/vivek.jpg";
+import nextEjpg from "../../assets/nextE.jpg";
+import vikasjpg from "../../assets/vikas.jpg";
+import rahuljpg from "../../assets/Rahul.jpg";
 
 const achievers = [
   {
@@ -35,7 +52,7 @@ const achievers = [
     address: "Mahaveer Nagar, Rewari",
     jeeRank: "2313*",
     iit: "IIT Delhi",
-    img: rachitpng, // Replace with actual image path
+    img: chetnajpg, // Replace with actual image path
   },
   {
     name: "Nancy Yadav",
@@ -43,7 +60,7 @@ const achievers = [
     address: "Berli Kalan, Rewari",
     jeeRank: "5297",
     iit: "IIT Roorkee",
-    img: rachitpng, // Replace with actual image path
+    img: nancyjpg, // Replace with actual image path
   },
   {
     name: "Kashish Kapadia",
@@ -51,31 +68,139 @@ const achievers = [
     address: "Rohtas, Bihar",
     jeeRank: "5376",
     iit: "IIT Delhi",
-    img: rachitpng, // Replace with actual image path
+    img: kashishjpg, // Replace with actual image path
   },
   {
-    name: "Kashish Kapadia",
-    parent: "Pawan Kumar",
-    address: "Rohtas, Bihar",
-    jeeRank: "5376",
-    iit: "IIT Delhi",
-    img: rachitpng, // Replace with actual image path
+    name: "Pooja Thakran",
+    parent: "Bijender Singh",
+    address: "Gadaipur, Gurugram",
+    jeeRank: "4422",
+    iit: "IIT Kharagpur",
+    img: poojajpg, // Replace with actual image path
   },
-  
-  
+  {
+    name: "Harsh Lamba",
+    parent: "Nahar Singh Lamba",
+    address: "Goliyaka, Rewari",
+    jeeRank: "5418",
+    iit: "IIT Dhanbad",
+    img: harshjpg, // Replace with actual image path
+  },
+  {
+    name: "Harshita Sehrawat",
+    parent: "Pawan Kumar",
+    address: "Dhanora, Rewari",
+    jeeRank: "3149",
+    iit: "IIT Dhanbad",
+    img: harshitajpg, // Replace with actual image path
+  },
+  {
+    name: "Hitesh Kumar",
+    parent: "Devender Kumar",
+    address: "Kund, Rewari",
+    jeeRank: "1888",
+    iit: "IIT Dhanbad",
+    img: hiteshjpg, // Replace with actual image path
+  },
+  {
+    name: "Kuran Yadav",
+    parent: "Anil Yadav",
+    address: "Hazariwas, Rewari",
+    jeeRank: "1851",
+    iit: "IIT Dhanbad",
+    img: kuranjpg, // Replace with actual image path
+  },
+  {
+    name: "Hima Yadav",
+    parent: "Rajesh Yadav",
+    address: "Gokalpur, Rewari",
+    jeeRank: "7203",
+    iit: "IIT Dhanbad",
+    img: himajpg, // Replace with actual image path
+  },
+  {
+    name: "Dhruv Yadav",
+    parent: "Vijay Yadav",
+    address: "Saraswati Vihar, Rewari",
+    jeeRank: "4039",
+    iit: "IIT Dhanbad",
+    img: druvjpg, // Replace with actual image path
+  },
+  {
+    name: "Tushant Kumar",
+    parent: "Pawan Kumar",
+    address: "Bapas, Gurugram",
+    jeeRank: "3707",
+    iit: "IIT Dhanbad",
+    img: tushantjpg, // Replace with actual image path
+  },
+  {
+    name: "Ravikant",
+    parent: "Birender Yadav",
+    address: "Sec-04, Rewari",
+    jeeRank: "3844",
+    iit: "IIT Dhanbad",
+    img: ravikantjpg, // Replace with actual image path
+  },
+  {
+    name: "Isha Yadav",
+    parent: "Ajeet Yadav",
+    address: "Karawara, Rewari",
+    jeeRank: "4067",
+    iit: "IIT Dhanbad",
+    img: ishajpg, // Replace with actual image path
+  },
+  {
+    name: "Vivek Yadav",
+    parent: "Rajbir Singh",
+    address: "Pahari, Rewari",
+    jeeRank: "5264",
+    iit: "IIT Dhanbad",
+    img: vivekjpg, // Replace with actual image path
+  },
+  {
+    name: "...",
+    jeeRank: "...",
+    iit: "Next can be You!",
+    img: nextEjpg, // Replace with actual image path
+  }
+
+];
+
+const medicalAchievers = [
+  { name: "Vikas", parent: "Khetaram", address: "Nangal Katha Narnaul", neetScore: "685/720", college: "UCMS Delhi", img: vikasjpg },
+  { name: "Rahul Kumar", parent: "Sanjay Kumar", address: "Sukarpura,Rewari", neetScore: "603/720", college: "Govt. Ayurved College, Nagpur", img: rahuljpg },
+  { name: "", parent: "", address: "",  college: "Next can be You!", img: nextEjpg },
 ];
 
 const Achievers = () => {
   return (
     <div className="achievers-container">
+      <h2 className="maintitle">Achievement Book</h2>
       <h1 className="title">Our Achievers in IITs</h1>
-      
+
       <div className="achievers-list">
         {achievers.map((achiever, index) => (
           <div className="achiever-card" key={index}>
             <img src={achiever.img} alt={achiever.name} className="achiever-img" />
             <h3 className="iit-name">{achiever.iit}</h3>
             <p className="jee-rank">JEE Adv.: {achiever.jeeRank}</p>
+            <div className="achiever-info">
+              <p className="achiever-name">{achiever.name}</p>
+              <p className="parent">S/o {achiever.parent}</p>
+              <p className="address">Add: {achiever.address}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <h1 className="title">Our Achievements in Government Medical Colleges</h1>
+      <div className="achievers-list">
+        {medicalAchievers.map((achiever, index) => (
+          <div className="achiever-card" key={index}>
+            <img src={achiever.img} alt={achiever.name} className="achiever-img" />
+            <h3 className="iit-name">{achiever.college}</h3>
+            <p className="jee-rank">NEET Score: {achiever.neetScore}</p>
             <div className="achiever-info">
               <p className="achiever-name">{achiever.name}</p>
               <p className="parent">S/o {achiever.parent}</p>
