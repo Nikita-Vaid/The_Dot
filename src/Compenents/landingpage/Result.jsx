@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../landingpage/Result.css";
 import mukulpng from "../../assets/mukul.png";
 import garvpng from "../../assets/garv.png";
@@ -20,6 +20,15 @@ import vivekjpg from "../../assets/vivek.jpg";
 import nextEjpg from "../../assets/nextE.jpg";
 import vikasjpg from "../../assets/vikas.jpg";
 import rahuljpg from "../../assets/Rahul.jpg";
+import Namit from "../../assets/13.png";
+import Madhur from "../../assets/6.png";
+import Devansh from "../../assets/12.png";
+import Aryan from "../../assets/11.png";
+import Deepanshu from "../../assets/10.png";
+import Dheeraj from "../../assets/8.png";
+import Rajat from "../../assets/5.png";
+import Rinku from "../../assets/9.png";
+import Sakshi from "../../assets/7.png";
 import aaryajpg from "../../assets/aarya.jpg";
 import nikhiljpg from "../../assets/nikhil.jpg";
 import badaljpg from "../../assets/badal.jpg";
@@ -43,6 +52,19 @@ import rishijpg from "../../assets/rishi.jpg";
 import divayjpg from "../../assets/divay.jpg";
 import kunaljpg from "../../assets/kunal.jpg";
 
+
+const jeemain = [
+  { name: "Namit Jain", parent: "Bhushan Jain", address: "Gandhi Nagar,Rewari,Haryana", Percentile: "99.54", img: Namit },
+  { name: "Madhur", parent: "Naveen Kumar", address: "Jhajjar,Rewari ,Haryana", Percentile: "99.3",  img: Madhur},
+  { name: "Devansh", parent: "Vinod", address: "Ansal Town,Rewari,Haryana",Percentile: "99.01", img:Devansh },
+  { name: "Aryan", parent: "Birender Yadav", address: "Rajpura Khalsa, Rewari,Haryana", Percentile: "98.38", img: Aryan},
+  { name: "Deepanshu", parent: "Dharmendra yadav", address: "Pahari,Rewari,Haryana", Percentile: "97.84", college: "", img: Deepanshu},
+  { name: "Dheeraj Saini", parent: "Manoj Saini", address: "Hansnagar,Rewari,Haryana",Percentile: "97.78", img:Dheeraj },
+  { name: "Rajat", parent: "Rajesh Kumar", address: "Chowky-02,Rewari,Haryana",Percentile: "97.59", img:Rajat },
+  { name: "Rinku", parent: "Sukhbir Singh", address: "Kund,Rewari,Haryana",Percentile: "96.98", img:Rinku },
+  { name: "Sakshi", parent: "Manoj Kumar", address: "Sec-4,Rewari,Haryana",Percentile: "96.27", img:Sakshi },
+  {name : "Next can be You!", Percentile: "...", img: nextEjpg}
+];
 const achievers = [
   {
     name: "Mukul Kaushik",
@@ -191,7 +213,7 @@ const achievers = [
 
 const medicalAchievers = [
   { name: "Vikas", parent: "Khetaram", address: "Nangal Katha Narnaul", neetScore: "685/720", college: "UCMS Delhi", img: vikasjpg },
-  { name: "Rahul Kumar", parent: "Sanjay Kumar", address: "Sukarpura,Rewari", neetScore: "603/720", college: "Govt. Ayurved College, Nagpur", img: rahuljpg },
+  { name: "Rahul Kumar", parent: "Sanjay Kumar", address: "Sukarpura,Rewari", neetScore: "603/720", college: "GAC Nagpur", img: rahuljpg },
   { name: "Next can be You!", parent: "", address: "",  college: "Your Future College!", img: nextEjpg },
 ];
 
@@ -234,17 +256,33 @@ const Achievers = () => {
   return (
     <div className="achievers-container">
       <h2 className="maintitle">Achievement Book</h2>
-      <h1 className="title">Our Achievers in IITs</h1>
+      <h1 className="title">Our Achievements in JEE MAINS 2025</h1>
+      <div className="achievers-list">
+        {jeemain.map((achiever, index) => (
+          <div className="achiever-card" key={index}>
+            <h3 className="iit-name">{achiever.college}</h3>
+            <p className="jee-rank">PERCENTILE: {achiever.Percentile}</p>
+            <img src={achiever.img} alt={achiever.name} className="achiever-img" />
+            <div className="achiever-info">
+              <p className="achiever-name">{achiever.name}</p>
+              <p className="parent">S/o: {achiever.parent}</p>
+              <p className="address">Add: {achiever.address}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
+      <h1 className="title">Our Achievers in IITs</h1>
       <div className="achievers-list">
         {achievers.map((achiever, index) => (
           <div className="achiever-card" key={index}>
-            <img src={achiever.img} alt={achiever.name} className="achiever-img" />
+           
             <h3 className="iit-name">{achiever.iit}</h3>
             <p className="jee-rank">JEE Adv.: {achiever.jeeRank}</p>
+            <img src={achiever.img} alt={achiever.name} className="achiever-img" />
             <div className="achiever-info">
               <p className="achiever-name">{achiever.name}</p>
-              <p className="parent">S/o {achiever.parent}</p>
+              <p className="parent">S/o: {achiever.parent}</p>
               <p className="address">Add: {achiever.address}</p>
             </div>
           </div>
@@ -255,12 +293,13 @@ const Achievers = () => {
       <div className="achievers-list">
         {medicalAchievers.map((achiever, index) => (
           <div className="achiever-card" key={index}>
-            <img src={achiever.img} alt={achiever.name} className="achiever-img" />
+           
             <h3 className="iit-name">{achiever.college}</h3>
             <p className="jee-rank">NEET Score: {achiever.neetScore}</p>
+            <img src={achiever.img} alt={achiever.name} className="achiever-img" />
             <div className="achiever-info">
               <p className="achiever-name">{achiever.name}</p>
-              <p className="parent">S/o {achiever.parent}</p>
+              <p className="parent">S/o: {achiever.parent}</p>
               <p className="address">Add: {achiever.address}</p>
             </div>
           </div>
@@ -270,9 +309,10 @@ const Achievers = () => {
       <div className="achievers-list">
         {otherAchievers.map((achiever, index) => (
           <div className="achiever-card" key={index}>
-            <img src={achiever.img} alt={achiever.name} className="achiever-img" />
+            
             <h3 className="iit-name">{achiever.college}</h3>
             <p className="jee-rank">JEE Rank: {achiever.jeeRank}</p>
+            <img src={achiever.img} alt={achiever.name} className="achiever-img" />
             <div className="achiever-info">
               <p className="achiever-name">{achiever.name}</p>
               <p className="parent">S/o {achiever.parent}</p>
