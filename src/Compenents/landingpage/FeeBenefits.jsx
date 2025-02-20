@@ -26,7 +26,7 @@ const FeeBenefits = () => {
           </button>
         </div>
         <div className="benefit-card">
-          <h2 className="benefit-title">RESULT PAGE</h2>
+          <h1 className="benefit-title">Achievements</h1>
           <p className="benefit-description">
             Explore the outstanding achievements of our students.
           </p>
