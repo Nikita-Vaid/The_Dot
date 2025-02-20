@@ -3,7 +3,6 @@ import "../../../styles/StatsSection.css";
 
 const StatsSection = () => {
   const stats = [
-    { label: "Highly Qualified Faculties" },
     { label: "Experienced IITians Team In PCM." },
     { label: "Faculty Stability." },
     { label: "Individual Attention." },
