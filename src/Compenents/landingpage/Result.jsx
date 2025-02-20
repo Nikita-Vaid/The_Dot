@@ -308,7 +308,7 @@ const Achievers = () => {
       <div className="achievers-list">
         {otherAchievers.map((achiever, index) => (
           <div className="achiever-card" key={index}>
-            <img src={achiever.img} alt={achiever.name} className="achiever-img" />
+            
             <h3 className="iit-name">{achiever.college}</h3>
             <img src={achiever.img} alt={achiever.name} className="achiever-img" />
             <div className="achiever-info">
