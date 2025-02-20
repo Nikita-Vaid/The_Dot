@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../../../styles/CoursesSectionL.css";
 
 const CoursesSection = () => {
@@ -21,6 +21,15 @@ const CoursesSection = () => {
     setCurrentIndex((prevIndex) => (prevIndex === courses.length - 1 ? 0 : prevIndex + 1));
   };
 
+  // Auto-slide functionality (every 5 seconds)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000); // Change video every 5 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, [currentIndex]);
+
   return (
     <div className="courses-sectionL">
       <h1 className="courses-titleL">EXPLORE OUR PODCAST</h1>
@@ -39,11 +48,19 @@ const CoursesSection = () => {
         </div>
         <button className="slider-button right" onClick={nextSlide}>&#10095;</button>
       </div>
+
+      {/* Navigation Dots */}
+      <div className="dots-container">
+        {courses.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${currentIndex === index ? "active" : ""}`}
+            onClick={() => setCurrentIndex(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };
 
 export default CoursesSection;
-
-
-

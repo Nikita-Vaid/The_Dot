@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState, useEffect } from "react";
 import "../../../styles/TriumphSection.css";
 import first from "../../assets/4.jpg";
 import firt from "../../assets/1.jpg";
@@ -12,31 +12,49 @@ import eighth from "../../assets/18.jpg";
 import ninth from "../../assets/19.jpg";
 
 const TriumphSection = () => {
-  const [videoindex,setIndex]=useState(0);
-  const previndex=()=>{
-    setIndex(videoindex===0?9:videoindex-1);
-  }
-  const nextindex=()=>{
-    setIndex(videoindex===9?0:videoindex+1);
-  }
-  const bannerimg =[
-    first,firt,second,third,fourth,fifth,sixth,seventh,eighth,ninth
+  const [videoIndex, setIndex] = useState(0);
+  const bannerImages = [
+    first, firt, second, third, fourth, fifth, sixth, seventh, eighth, ninth
   ];
-//  const name=["Devansh","Namit Jain","Madhur"];
+
+  const prevIndex = () => {
+    setIndex(videoIndex === 0 ? bannerImages.length - 1 : videoIndex - 1);
+  };
+
+  const nextIndex = () => {
+    setIndex(videoIndex === bannerImages.length - 1 ? 0 : videoIndex + 1);
+  };
+
+  // Auto-slide effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextIndex();
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, [videoIndex]);
+
   return (
     <div className="triumph-section">
-      <h1 className="title-t">EXCELLANCE IN JEE MAINS</h1>
+      <h1 className="title-t">EXCELLENCE IN JEE MAINS</h1>
       <div className="image-container">
-      <button className="slider-button left" onClick={previndex}>&#10094;</button>   
-      <div className="image-frame">
-        <img src={bannerimg[videoindex]} alt="The Triumph" className="triumph-image"/>
+        <button className="slider-button left" onClick={prevIndex}>&#10094;</button>
+        <div className="image-frame">
+          <img src={bannerImages[videoIndex]} alt="The Triumph" className="triumph-image"/>
         </div>
-      <button className="slider-button right" onClick={nextindex}>&#10095;</button>
+        <button className="slider-button right" onClick={nextIndex}>&#10095;</button>
       </div>
-      {/* <div className="triumph-description">
-       {name.map((name,index)=><h6 key={index}>{name}</h6>)}
-       <h5></h5>
-      </div> */}
+
+      {/* Dots Indicator */}
+      <div className="dots-container">
+        {bannerImages.map((_, index) => (
+          <span 
+            key={index} 
+            className={`dot ${videoIndex === index ? "active" : ""}`} 
+            onClick={() => setIndex(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };
