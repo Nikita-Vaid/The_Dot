@@ -3,7 +3,7 @@ import "../../../styles/StatsSection.css";
 
 const StatsSection = () => {
   const stats = [
-    { label: "Over 500 students mentored in 2024, fostering academic growth and success." },
+    { label: "Highly Qualified Faculties" },
     { label: "Specialized coaching for JEE, NEET, and competitive exams, tailored to each student's needs." },
     { label: "Proudly serving students in Rewari, with plans for expansion to other cities in India." },
     { label: "In 2024, we welcomed over 1,000 students, reflecting our growing reputation for quality education." },
