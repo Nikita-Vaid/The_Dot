@@ -44,7 +44,7 @@
 /* Image Frame */
 .image-frame {
   width: 100%;
-  max-width: 1200px; /* Prevents image from getting too large on bigger screens */
+  max-width: 1000px; /* Prevents image from getting too large on bigger screens */
   display: flex;
   justify-content: center;
   align-items: center;

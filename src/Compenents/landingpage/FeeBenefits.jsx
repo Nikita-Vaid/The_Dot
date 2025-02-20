@@ -13,7 +13,7 @@ const FeeBenefits = () => {
       </h1>
       <div className="benefits-grid">
         <div className="benefit-card">
-          <h2 className="benefit-title">Demo Classes</h2>
+          <h1 className="benefit-title">Demo Classes</h1>
           <p className="benefit-description">
             Attend Our Demo Classes For IIT-JEE & NEET
           </p>
@@ -25,7 +25,7 @@ const FeeBenefits = () => {
           </button>
         </div>
         <div className="benefit-card">
-          <h2 className="benefit-title">Result Page</h2>
+          <h1 className="benefit-title">Achievements</h1>
           <p className="benefit-description">
             Explore the outstanding achievements of our students.
           </p>
@@ -37,17 +37,16 @@ const FeeBenefits = () => {
           </Link>
         </div>
         <div className="benefit-card">
-          <h2 className="benefit-title">DSAT</h2>
+          <h1 className="benefit-title">Career Library</h1>
           <p className="benefit-description">
-            Take the DOT Scholarship Admission Test.
+            Explore Our Career Library For Better Future.
           </p>
           <p className="benefit-deadline">
-            Get up to <strong>90% scholarship</strong> based on your
-            performance.
+           Choose Your Career Option Based On Interest and Skills.
           </p>
-          <button className="apply-button" onClick={handleEnrolNowClick}>
-            APPLY NOW
-          </button>
+          <a href="https://thedotinstitute.in/career-streams" target="_blank" rel="noreferrer">
+            <button className="apply-button">EXPLORE NOW</button>
+          </a>
         </div>
       </div>
     </div>
