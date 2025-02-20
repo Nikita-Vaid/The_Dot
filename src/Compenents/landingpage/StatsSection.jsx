@@ -11,7 +11,7 @@ const StatsSection = () => {
     { label: "Parents Direct Interaction With Faculties." },
     { label: "Best Selection Ratio." },
     { label: "Transparency Of Results." },
-    { label: "100% Results Verification." },
+    { label: "100% Results Verification." },
   ];
 
   return (
