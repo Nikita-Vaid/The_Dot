@@ -17,6 +17,7 @@ const StatsSection = () => {
   return (
     <div className="stats-section">
       <div className="stats-background">
+       <h1>Why The DOT?</h1>
         <div className="stats-container"> {/* New container class */}
           {stats.map((stat, index) => (
             <div key={index} className="stat-card">
