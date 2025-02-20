@@ -3,7 +3,6 @@ import "../../../styles/StatsSection.css";
 
 const StatsSection = () => {
   const stats = [
-    { label: "Highly Qualified Faculties" },
     { label: "Experienced IITians Team In PCM." },
     { label: "Faculty Stability." },
     { label: "Individual Attention." },
@@ -16,9 +15,10 @@ const StatsSection = () => {
 
   return (
     <div className="stats-section">
+       {/* Title properly positioned */}
       <div className="stats-background">
-        <h1>Why The DOT?</h1>
-        <div className="stats-container"> {/* New container class */}
+      <h1 className="stats-title">Why The DOT?</h1>
+        <div className="stats-container">
           {stats.map((stat, index) => (
             <div key={index} className="stat-card">
               <p>{stat.label}</p>
