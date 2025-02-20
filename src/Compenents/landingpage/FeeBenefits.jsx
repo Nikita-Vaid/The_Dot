@@ -13,19 +13,20 @@ const FeeBenefits = () => {
       </h1>
       <div className="benefits-grid">
         <div className="benefit-card">
-          <h2 className="benefit-title">Demo Classes</h2>
+          <h2 className="benefit-title">DEMO CLASSES</h2>
           <p className="benefit-description">
-            Attend Our Demo Classes For IIT-JEE & NEET
-          </p>
-          <p className="benefit-deadline">
             Free 15 Days Demo Class For 12th Class.
           </p>
+          <p className="benefit-deadline">
+            Attend Our Demo Classes For IIT-JEE & NEET
+          </p>
+          
           <button className="apply-button" onClick={handleEnrolNowClick}>
             APPLY NOW
           </button>
         </div>
         <div className="benefit-card">
-          <h2 className="benefit-title">Result Page</h2>
+          <h2 className="benefit-title">RESULT PAGE</h2>
           <p className="benefit-description">
             Explore the outstanding achievements of our students.
           </p>
