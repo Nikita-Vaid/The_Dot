@@ -276,9 +276,7 @@ const Achievers = () => {
       <div className="achievers-list">
         {achievers.map((achiever, index) => (
           <div className="achiever-card" key={index}>
-           
             <h3 className="iit-name">{achiever.iit}</h3>
-            <img src={achiever.img} alt={achiever.name} className="achiever-img" />
             <p className="jee-rank">JEE Adv.: {achiever.jeeRank}</p>
             <img src={achiever.img} alt={achiever.name} className="achiever-img" />
             <div className="achiever-info">
@@ -312,7 +310,6 @@ const Achievers = () => {
           <div className="achiever-card" key={index}>
             
             <h3 className="iit-name">{achiever.college}</h3>
-            <p className="jee-rank">JEE Rank: {achiever.jeeRank}</p>
             <img src={achiever.img} alt={achiever.name} className="achiever-img" />
             <div className="achiever-info">
               <p className="achiever-name">{achiever.name}</p>
