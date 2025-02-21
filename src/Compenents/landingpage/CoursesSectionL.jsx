@@ -3,6 +3,7 @@ import "../../../styles/CoursesSectionL.css";
 
 const CoursesSection = () => {
   const courses = [
+    "https://www.youtube.com/embed/UcqFdpc9q9Q?si=-Db3vPZvqSuukubl",
     "https://www.youtube.com/embed/Ab40mFOH0no?si=bIEejFWEU7fjoXFo",
     "https://www.youtube.com/embed/AUZd7aGnPK0?si=eTWe8u3nzAMYEkvE",
     "https://www.youtube.com/embed/E5_0W-bx1YE",
