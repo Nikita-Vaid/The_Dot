@@ -79,7 +79,7 @@ const Admission = () => {
         <div className="admission-content">
           <div className="admission-info">
             <div className="three">
-              <h1>THE DOT</h1>
+              <h1>The DOT</h1>
               <h2>The Clear Leader</h2>
               <p>IIT-JEE, AIIMS, NEET (UG) & Olympiads</p>
               <img src={GreenBoard} alt="The Green Board" width="500" height="300" />
