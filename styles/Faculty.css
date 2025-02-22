@@ -67,10 +67,12 @@
 }
 
 .facultyimage {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+  background-color: white;
   margin: 10px auto;
+  border: 3px solid #ffffff; /* White border */
   object-fit: cover;
 }
 
@@ -83,8 +85,8 @@
 
 .faculty-degree {
   font-size: 1.2rem;
-  color: #30052b;
   font-weight: bold;
+  color: #f2f9f9;
 }
 
 .faculty-contact {
