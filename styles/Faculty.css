@@ -1,70 +1,82 @@
+/* Faculty Styles */
+
 .faculty-container {
-    min-height: 100vh;
-    background-color: #1e3a8a;
-    color: white;
-    padding: 2.5rem 1rem;
-    text-align: center;
-  }
-  
-  .faculty-title {
-    font-size: 1.875rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-  }
-  
-  .faculty-grid {
-    max-width: 64rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .faculty-subject {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    border-left: 4px solid #facc15;
-    padding-left: 0.5rem;
-  }
-  
-  .faculty-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .faculty-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    color: black;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    border-radius: 1rem;
-    text-align: center;
-  }
-  
-  .faculty-image {
-    width: 5rem;
-    height: 5rem;
-    background-color: #d1d5db;
-    border-radius: 50%;
-    margin-bottom: 0.75rem;
-  }
-  
-  .faculty-name {
-    font-size: 1.125rem;
-    font-weight: 600;
-  }
-  
-  .faculty-degree {
-    font-size: 0.875rem;
-    color: #4b5563;
-  }
-  
-  .faculty-contact {
-    margin-top: 2.5rem;
-    font-size: 1.125rem;
-  }
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.faculty-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.faculty-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.faculty-subject {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.faculty-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.faculty-card {
+  background: linear-gradient(135deg, #e4ab0c, #eaee83);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(236, 109, 109, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 250px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  position: relative;
+}
+
+.faculty-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border-color: #3498db;
+  box-shadow: 0 0 15px #3498db;
+}
+
+.facultyimage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.faculty-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+.faculty-degree {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.faculty-contact {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+

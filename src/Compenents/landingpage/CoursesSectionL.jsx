@@ -14,7 +14,7 @@ const CoursesSection = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const prevSlide = () => {
+  const prevSlide = () => {  
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? courses.length - 1 : prevIndex - 1));
   };
 
