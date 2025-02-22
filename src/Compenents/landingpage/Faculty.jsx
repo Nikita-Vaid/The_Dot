@@ -1,35 +1,48 @@
 import "../../../styles/faculty.css";
-import imag1 from "../../assets/imgt.avif";
+import imag1 from "../../assets/rahul.png";
+import imag2 from "../../assets/raju.png";
+import imag3 from "../../assets/raju.png";
+
+import imag4 from "../../assets/satish.png";
+import imag5 from "../../assets/anukalp.png";
+import imag6 from "../../assets/pooja.png";
+
+import imag7 from "../../assets/kundan.png";
+import imag8 from "../../assets/manish.png";
+import imag9 from "../../assets/mohit.png";
+
+import imag10 from "../../assets/itipareek.png";
+import imag11 from "../../assets/seema.png";
 const facultyData = [
   {
     subject: "Physics",
     members: [
       { name: "Rahul Sir", degree: "B.Tech, IIT Bombay" ,img:imag1},
-      { name: "Chirranjeev Sir", degree: "B.Tech, IIT Roorkee"  ,img:imag1},
-      { name: "Raju Sir", degree: "B.Tech, DTU"  ,img:imag1},
+      { name: "Chirranjeev Sir", degree: "B.Tech, IIT Roorkee"  ,img:imag2},
+      { name: "Raju Sir", degree: "B.Tech, DTU"  ,img:imag3},
     ],
   },
   {
     subject: "Chemistry",
     members: [
-      { name: "Satish Sir", degree: "Int. M.Tech, IIT Dhanbad",img:imag1 },
-      { name: "Anukalp Sir", degree: "B.Tech, IIT Dhanbad",img:imag1 },
-      { name: "Pooja Mam", degree: "M.Sc, MDU Rohtak",img:imag1 }
+      { name: "Satish Sir", degree: "Int. M.Tech, IIT Dhanbad",img:imag4 },
+      { name: "Anukalp Sir", degree: "B.Tech, IIT Dhanbad",img:imag5 },
+      { name: "Pooja Mam", degree: "M.Sc, MDU Rohtak",img:imag6 }
     ],
   },
   {
     subject: "Maths",
     members: [
-      { name: "Kundan Sir", degree: "B.Tech, IIT Delhi",img:imag1 },
-      { name: "Manish Sir", degree: "M.Sc, IIT Delhi",img:imag1 },
-      { name: "Mohit Sir", degree: "M.Sc, NIT Jmsd",img:imag1 },
+      { name: "Kundan Sir", degree: "B.Tech, IIT Delhi",img:imag7 },
+      { name: "Manish Sir", degree: "M.Sc, IIT Delhi",img:imag8 },
+      { name: "Mohit Sir", degree: "M.Sc, NIT Jmsd",img:imag9 },
     ],
   },
   {
     subject: "Biology",
     members: [
-      { name: "Iti Pareek Mam", degree: "M.Sc, Banasthali University",img:imag1 },
-      { name: "Seema Mam", degree: "M.Sc, GJU Hisar",img:imag1 },
+      { name: "Iti Pareek Mam", degree: "M.Sc, Banasthali University",img:imag10 },
+      { name: "Seema Mam", degree: "M.Sc, GJU Hisar",img:imag11 },
     ],
   },
 ];
