@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../styles/DotGuide.css'; // Ensure you have a corresponding CSS file for styling
 import guidelineImages from "../../assets/guidelines.png";
+import { Link } from 'react-router-dom';
 
 const DotGuide = () => {
   return (
@@ -36,8 +37,9 @@ const DotGuide = () => {
             <button className="dot-button">Better care</button>
             <button className="dot-button">Better outcomes</button>
           </div>
-        </div>
+        </div>  
       </div>
+      <Link to ="/facuilty"><button className="dot-button"> Explore Our Faculty Section</button></Link>
     </div>
   );
 };
