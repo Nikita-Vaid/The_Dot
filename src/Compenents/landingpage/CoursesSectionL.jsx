@@ -3,6 +3,7 @@ import "../../../styles/CoursesSectionL.css";
 
 const CoursesSection = () => {
   const courses = [
+    "https://www.youtube.com/embed/UcqFdpc9q9Q?si=-Db3vPZvqSuukubl",
     "https://www.youtube.com/embed/Ab40mFOH0no?si=bIEejFWEU7fjoXFo",
     "https://www.youtube.com/embed/AUZd7aGnPK0?si=eTWe8u3nzAMYEkvE",
     "https://www.youtube.com/embed/E5_0W-bx1YE",
@@ -13,7 +14,7 @@ const CoursesSection = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const prevSlide = () => {
+  const prevSlide = () => {  
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? courses.length - 1 : prevIndex - 1));
   };
 

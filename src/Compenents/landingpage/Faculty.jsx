@@ -1,41 +1,44 @@
 import "../../../styles/faculty.css";
+import imag1 from "../../assets/imgt.avif";
 const facultyData = [
   {
     subject: "Physics",
     members: [
-      { name: "Rahul Sir", degree: "B.Tech, IIT Bombay" },
-      { name: "Chirranjeev Sir", degree: "B.Tech, IIT Roorkee" },
-      { name: "Raju Sir", degree: "B.Tech, DTU" },
+      { name: "Rahul Sir", degree: "B.Tech, IIT Bombay" ,img:imag1},
+      { name: "Chirranjeev Sir", degree: "B.Tech, IIT Roorkee"  ,img:imag1},
+      { name: "Raju Sir", degree: "B.Tech, DTU"  ,img:imag1},
     ],
   },
   {
     subject: "Chemistry",
     members: [
-      { name: "Satish Sir", degree: "Int. M.Tech, IIT Dhanbad" },
-      { name: "Anukalp Sir", degree: "B.Tech, IIT Dhanbad" },
-      { name: "Pooja Mam", degree: "M.Sc, MDU Rohtak" },
+      { name: "Satish Sir", degree: "Int. M.Tech, IIT Dhanbad",img:imag1 },
+      { name: "Anukalp Sir", degree: "B.Tech, IIT Dhanbad",img:imag1 },
+      { name: "Pooja Mam", degree: "M.Sc, MDU Rohtak",img:imag1 }
     ],
   },
   {
     subject: "Maths",
     members: [
-      { name: "Kundan Sir", degree: "B.Tech, IIT Delhi" },
-      { name: "Manish Sir", degree: "M.Sc, IIT Delhi" },
-      { name: "Mohit Sir", degree: "M.Sc, NIT Jmsd" },
+      { name: "Kundan Sir", degree: "B.Tech, IIT Delhi",img:imag1 },
+      { name: "Manish Sir", degree: "M.Sc, IIT Delhi",img:imag1 },
+      { name: "Mohit Sir", degree: "M.Sc, NIT Jmsd",img:imag1 },
     ],
   },
   {
     subject: "Biology",
     members: [
-      { name: "Iti Pareek Mam", degree: "M.Sc, Banasthali University" },
-      { name: "Seema Mam", degree: "M.Sc, GJU Hisar" },
+      { name: "Iti Pareek Mam", degree: "M.Sc, Banasthali University",img:imag1 },
+      { name: "Seema Mam", degree: "M.Sc, GJU Hisar",img:imag1 },
     ],
   },
 ];
 
-const FacultyCard = ({ name, degree }) => (
+const FacultyCard = ({ name, degree,img }) => (
   <div className="faculty-card">
-    <div className="faculty-image"></div>
+    <div className="faculty-image">
+      <img className="facultyimage" src={img} alt="Faculty" />
+    </div>
     <h3 className="faculty-name">{name}</h3>
     <p className="faculty-degree">{degree}</p>
   </div>
